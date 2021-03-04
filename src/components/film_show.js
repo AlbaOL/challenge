@@ -52,7 +52,6 @@ export default class FilmShow extends Component {
             <td><p>Characters: </p></td>
             <td>
               <div className="main_list_container">
-                {console.log('characters', film.characters)}
                 {film.characters && <PeopleList characters={film.characters}/>}
               </div>
             </td>

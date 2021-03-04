@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correctly text component 1`] = `
+<div
+  className="main_list_container"
+/>
+`;
+
+exports[`render correctly text component 2`] = `
+<div
+  className="main_list_container"
+/>
+`;

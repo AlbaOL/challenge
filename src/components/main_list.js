@@ -28,12 +28,12 @@ export default class MainList extends Component {
           <Link to={`/films/${index + 2}`}>
             <Film film={film} />
           </Link>
-          <div onclick={()=>{/*añadir o eliminar de fav*/}} style={{color:this.isFav()?'yellow' : 'black'}} > fav </div>
+          <div onClick={()=>{/*add or remove fav*/}} style={{color:this.isFav()?'red' : 'black'}} > <i className="icon icon-star"> Add favourite</i> </div>
         </div>
     })
   }
   isFav = _=>{
-    //comprobar que esta añadido a fav
+    //check fav
     return false;
   }
 

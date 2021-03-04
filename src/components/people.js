@@ -40,7 +40,7 @@ export default class People extends Component {
     return (
       <React.Fragment>
         <div onClick={()=>{this.setState({showInfo: !this.state.showInfo})}}>
-          <h4>{this.state.character?.name}</h4>
+          <span style={{color:'blue'}}>{this.state.character?.name}</span>
         </div>
         {this.state.showInfo && this.showInfo()}
       </React.Fragment>
