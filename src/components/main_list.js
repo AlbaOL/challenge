@@ -8,7 +8,8 @@ export default class MainList extends Component {
   constructor(props){
     super(props);
     this.state={
-      films: []
+      films: [],
+      favFilms: [],
     }
   }
 
@@ -23,12 +24,17 @@ export default class MainList extends Component {
 
   renderFilmList() {
     return this.state.films.map((film,index) => {
-      return <div key={index}>
+      return <div style={{display:'flex', alignItems:'center'}} key={index}>
           <Link to={`/films/${index + 2}`}>
             <Film film={film} />
           </Link>
+          <div onclick={()=>{/*añadir o eliminar de fav*/}} style={{color:this.isFav()?'yellow' : 'black'}} > fav </div>
         </div>
     })
+  }
+  isFav = _=>{
+    //comprobar que esta añadido a fav
+    return false;
   }
 
   render(){

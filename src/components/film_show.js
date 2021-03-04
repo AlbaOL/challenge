@@ -53,7 +53,7 @@ export default class FilmShow extends Component {
             <td>
               <div className="main_list_container">
                 {console.log('characters', film.characters)}
-                <PeopleList key={film.characters}/>
+                {film.characters && <PeopleList characters={film.characters}/>}
               </div>
             </td>
           </tr>
